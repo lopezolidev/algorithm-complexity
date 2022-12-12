@@ -1,0 +1,20 @@
+{
+  "name": "algorithm-complexity",
+  "version": "1.0.0",
+  "description": "A basic repository to store pieces of code to work with algorithm complexity (space and time)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergioiscoding/algorithm-complexity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergioiscoding/algorithm-complexity/issues"
+  },
+  "homepage": "https://github.com/sergioiscoding/algorithm-complexity#readme"
+}
