@@ -1,18 +1,18 @@
 /**
  * Complejidad Temporal -> O( n * n + 6 ) → O(n²)
- * Complejidad Espacial -> O(  )
- * Espacio Auxiliar -> O(  )
+ * Complejidad Espacial -> O( n + 4 ) → O(n)
+ * Espacio Auxiliar -> O( n + 4 ) - O ( n ) → O(4) → O(1) | Total space complexity - input space
  */
-function bubbleSort(arreglo) {
-  let longitud = arreglo.length; // O(1)
-  for (let i = 0; i < longitud; i++) { // O(n)
-    for (let j = 0; j < longitud; j++) { // O(n)
-      if (arreglo[j] > arreglo[j + 1]) { // O(1)
-        let temporal = arreglo[j]; // O(1)
-        arreglo[j] = arreglo[j + 1]; // O(1)
-        arreglo[j + 1] = temporal; // O(1)
+function bubbleSort(arreglo) { // Space complexity: O(n); array with 'n' elements
+  let longitud = arreglo.length; // Time complexity: O(1) | Space complexity: O(1)
+  for (let i = 0; i < longitud; i++) { // Time complexity: O(n) | Space complexity: O(1)
+    for (let j = 0; j < longitud; j++) { // Time complexity: O(n) | Space complexity: O(1)
+      if (arreglo[j] > arreglo[j + 1]) { // Time complexity: O(1) | Space complexity: none
+        let temporal = arreglo[j]; // Time complexity: O(1) | Space complexity: O(1)
+        arreglo[j] = arreglo[j + 1]; // Time complexity: O(1) | Space complexity: none
+        arreglo[j + 1] = temporal; //  Time complexity: O(1) | Space complexity: none
       }
     }
   }
-  return arreglo; // O(1)
+  return arreglo; // Time complexity: O(1) | Space complexity: none
 }
